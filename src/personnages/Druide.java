@@ -28,13 +28,15 @@ private String prendreParole() {
 
 public void preparerPotion () {
 	Random random = new Random();
-	int forcePotion = random.nextInt(effetPotionMax - effetPotionMin + 1) + effetPotionMin ;
+	//int forcePotion = random.nextInt(effetPotionMax - effetPotionMin + 1) + effetPotionMin ;
+	int forcePotion = 6;
 	//System.out.println("Force Potion : " + forcePotion);
+	
 	if (forcePotion > 7) {
 		parler("J'ai préparé une super potion de force");
 		
 	} else {
-		parler(" Je n'ai pas trouvé tous les ingrédients, ma potion est seulement de force" + forcePotion);
+		parler(" Je n'ai pas trouvé tous les ingrédients, ma potion est seulement de force" + forcePotion +".");
 	
 	}
 	}
@@ -43,9 +45,6 @@ public static void main(String[] args) {
 	Druide panoramix = new Druide ("Panoramix", 5 , 10);
 	panoramix.preparerPotion();
 	
-	
-	
-	
 }
 	
 public void booster(String gaulois) {
@@ -53,10 +52,7 @@ public void booster(String gaulois) {
 		System.out.println(" Non, Obélix !... Tu n’auras pas de potion magique !");
 	}
 	
-	
-	
 }
-	
 }
 
 

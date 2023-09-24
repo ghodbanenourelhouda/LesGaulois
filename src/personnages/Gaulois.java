@@ -16,12 +16,13 @@ public Gaulois(String nom, int force) {
 }
 
 public void parler(String texte) {
-	System.out.println(prendreParole() + "« " + texte + "»");  // pourquoi il y a le trait bleu ? 
+	System.out.println(prendreParole() + "« " + texte + "»");  
 	}
 
 private String prendreParole() {
 	return "Le gaulois " + nom + " : ";
 }
+
 public void frapper(Romain romain) {
 	System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
 	romain.recevoirCoup((force / 3) * effetPotion);
@@ -47,28 +48,28 @@ public static void main(String[] args) {
     asterix.prendreParole();
     asterix.parler("On va gangner ! ");
     asterix.frapper(minus);     
-    asterix.boirePotion(3);
+    asterix.boirePotion(3);}
    
     
 public void boirePotion( int forcePotion) {
 	effetPotion = forcePotion; 
-	if (forcePotion == 3) {
-	asterix.parler("Merci Druide, je sens que ma force est 3 fois décuplée");
+	parler("Merci Druide, je sens que ma force est " + forcePotion + " fois décuplée");
+		
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
 }
+	
+	
+	
+	
+	
+	
+	
+
  
  
-}
-}
+
+
 
 
 
