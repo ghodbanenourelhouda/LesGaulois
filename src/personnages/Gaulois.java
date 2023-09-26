@@ -36,15 +36,11 @@ public String toString() {
 
 public static void main(String[] args) {
 	
-	//Affichage des informations des asterix :
-	
     Gaulois asterix = new Gaulois("Asterix", 8);
     Romain minus = new Romain ("Minus" , 7);
     System.out.println(asterix.getNom());
     System.out.println(asterix);
-    
-    // Prendre parole Asterix :
-    
+   
     asterix.prendreParole();
     asterix.parler("On va gangner ! ");
     asterix.frapper(minus);     
@@ -56,7 +52,6 @@ public void boirePotion( int forcePotion) {
 	parler("Merci Druide, je sens que ma force est " + forcePotion + " fois décuplée");
 		
 	}
-
 }
 	
 	
